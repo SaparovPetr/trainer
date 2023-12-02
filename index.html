@@ -5,7 +5,29 @@
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   
+    
+    <script src="pwabuilder-sw.js"></script>
+
+
+    <!-- <script>
+      // This is the "Offline copy of pages" service worker
+      const CACHE = "pwabuilder-offline";
+      importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+      self.addEventListener("message", (event) => {
+        if (event.data && event.data.type === "SKIP_WAITING") {
+          self.skipWaiting();
+        }
+      });
+
+      workbox.routing.registerRoute(
+        new RegExp('/*'),
+        new workbox.strategies.StaleWhileRevalidate({
+          cacheName: CACHE
+        })
+      );
+
+    </script> -->
+
     <title>Primitive_t</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/adaptive.css" />
@@ -42,7 +64,7 @@
     </main>
 
 
-    <script src="js/smoothly.js"></script>
+    <script src="js/smoothly.js"></scrip>
     <script src="js/arrayWithLinks.js"></script>
     <script src="js/script.js"></script>
 
