@@ -12,22 +12,19 @@
 
 html {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+p {
+  margin: 0;
+}
 
-  align-items: center;
+body {
   background-color: #323131;
   color: white;
-  position: relative;
-  max-width: 540px;
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Suisse";
   box-sizing: border-box;
   padding: 36px;
@@ -35,11 +32,17 @@ body {
 }
 
 .header {
-  align-self: start;
+  
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: start;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -60,17 +63,17 @@ body {
 .description {
   font-family: "Suisse";
   font-weight: bold;
+  font-size: 16px;
 }
 
-.advice {
+
+.translate_zone {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 70px;
+  gap: 4px;
 }
+
 
 .translating {
   color: transparent;
@@ -92,6 +95,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-block-start: 157px;
 }
 
 .link_to {
@@ -127,11 +131,4 @@ body {
 .button:active {
   border: 1px solid grey;
   color: grey;
-}
-
-.footer {
-  font-size: 16px;
-  margin: 0;
-  position: absolute;
-  bottom: 36px;
 }
