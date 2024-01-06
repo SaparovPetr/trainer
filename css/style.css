@@ -23,7 +23,7 @@ p {
 body {
   background-color: #323131;
   color: white;
-  min-height: 100%;
+  min-height: 100svh;
   margin: 0;
   font-family: "Suisse";
   box-sizing: border-box;
